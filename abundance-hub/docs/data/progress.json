@@ -1,0 +1,27 @@
+{
+  "generatedAt": null,
+  "repo": { "owner": "", "name": "", "url": "" },
+  "totals": { "openTasks": 0, "doneTasks": 0, "chapters": 0, "participants": 0 },
+  "impact": {
+    "reported": { "reports": 0, "people": 0, "households": 0, "kwh": 0 },
+    "verified": { "reports": 0, "people": 0, "households": 0, "kwh": 0 }
+  },
+  "byScale": {
+    "person": { "open": 0, "done": 0 },
+    "household": { "open": 0, "done": 0 },
+    "neighbourhood": { "open": 0, "done": 0 },
+    "city-region": { "open": 0, "done": 0 },
+    "national": { "open": 0, "done": 0 },
+    "global": { "open": 0, "done": 0 }
+  },
+  "byPhase": {
+    "0": { "open": 0, "done": 0 },
+    "1": { "open": 0, "done": 0 },
+    "2": { "open": 0, "done": 0 },
+    "3": { "open": 0, "done": 0 }
+  },
+  "byNeed": {},
+  "milestones": [],
+  "tasks": [],
+  "chapters": []
+}

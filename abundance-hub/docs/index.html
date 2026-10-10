@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abundance Hub</title>
+  <meta name="description" content="A peaceful, open plan to make energy abundant and make sure everyone has what they need. Pick a task, start a local chapter, report what you did.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23F0A800'/%3E%3Cpath d='M2 26h28' stroke='%232B4A7A' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <a class="wordmark" href="#top" id="top">Abundance Hub</a>
+    <nav aria-label="Main">
+      <a href="#tasks">Tasks</a>
+      <a href="#progress">Progress</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#goals">Goals</a>
+      <a href="#chapters">Chapters</a>
+      <a href="#how">How it works</a>
+    </nav>
+  </header>
+
+  <p class="preview-note" id="preview-note" hidden>
+    Preview mode. Buttons that open GitHub work once this site is published from a repository, or when you set <code>repo</code> in <code>config.js</code>.
+  </p>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">Make energy abundant. Make sure everyone has what they need.</h1>
+        <p class="lead">
+          A peaceful plan, run in the open, for people at every scale: one person, one home, one street, one city, one country, the whole world.
+          Pick a task, start a local group, or report what you did.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#tasks">Pick a task</a>
+          <a class="btn" data-issue="start-chapter.yml" href="#chapters">Start a local chapter</a>
+          <a class="btn" data-issue="report-action.yml" href="#progress">Report an action</a>
+        </div>
+      </div>
+
+      <figure class="day" aria-labelledby="day-caption">
+        <svg id="day-chart" viewBox="0 0 640 300" role="img" aria-label="Chart of one day on a grid built mostly from sunlight, wind and batteries. Solar covers the middle of the day and charges batteries, which cover the evening and night."></svg>
+        <div class="day-control">
+          <label for="day-hour">Time of day</label>
+          <input id="day-hour" type="range" min="0" max="23" step="1" value="13">
+          <output id="day-readout" for="day-hour" aria-live="polite"></output>
+        </div>
+        <figcaption id="day-caption">
+          An illustrative day on a grid built mostly from sunlight, wind and batteries. Not measured data. It shows the idea behind the plan: cheap daytime power, stored for the night.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="progress" class="block" aria-labelledby="progress-title">
+      <h2 id="progress-title">What people have done so far</h2>
+      <p class="sub" id="progress-sub">Counted from the reports people file. A maintainer checks each report before it counts as verified.</p>
+      <div class="table-wrap">
+        <table class="ledger">
+          <caption class="sr">Impact reported and verified</caption>
+          <thead>
+            <tr><th scope="col">Impact</th><th scope="col" class="num">Reported</th><th scope="col" class="num">Verified</th></tr>
+          </thead>
+          <tbody id="ledger-body"></tbody>
+        </table>
+      </div>
+      <dl class="tally" id="tally"></dl>
+      <p class="empty" id="progress-empty" hidden>No reports yet. The first one will appear here.</p>
+      <p><a class="btn" data-issue="report-action.yml" href="#progress">Report an action</a></p>
+    </section>
+
+    <section id="tasks" class="block" aria-labelledby="tasks-title">
+      <h2 id="tasks-title">Pick a task</h2>
+      <p class="sub">Every task is a GitHub issue. Comment <code>/claim</code> on one to say you are on it. Start where you are: most people begin with their own household or street.</p>
+
+      <div class="filters">
+        <fieldset class="scales">
+          <legend>Scale</legend>
+          <div class="scale-options" id="scale-options"></div>
+        </fieldset>
+        <div class="selects">
+          <label>Need
+            <select id="filter-need"><option value="">All needs</option></select>
+          </label>
+          <label>Phase
+            <select id="filter-phase"><option value="">All phases</option></select>
+          </label>
+        </div>
+      </div>
+
+      <p class="banner" id="starter-note" hidden>
+        These are the starter tasks. Each one becomes a claimable GitHub issue once the repository owner runs the <strong>Seed starter tasks</strong> workflow.
+      </p>
+      <p class="status-line" id="task-status" aria-live="polite"></p>
+      <ul class="tasks" id="task-list"></ul>
+      <p><a class="btn" data-issue="propose-task.yml" href="#tasks">Propose a new task</a></p>
+    </section>
+
+    <section id="roadmap" class="block" aria-labelledby="roadmap-title">
+      <h2 id="roadmap-title">Roadmap</h2>
+      <p class="sub">Four phases from today to 2055. Each bar shows how many of that phase's tasks are done.</p>
+      <ol class="phases" id="phases"></ol>
+    </section>
+
+    <section id="goals" class="block" aria-labelledby="goals-title">
+      <h2 id="goals-title">Goals we are working towards</h2>
+      <p class="sub" id="goals-note"></p>
+      <div class="table-wrap">
+        <table class="goals">
+          <caption class="sr">Goals with today's baseline and targets for 2030, 2040 and 2050</caption>
+          <thead>
+            <tr>
+              <th scope="col">Goal</th>
+              <th scope="col">Today</th>
+              <th scope="col">2030</th>
+              <th scope="col">2040</th>
+              <th scope="col">2050</th>
+            </tr>
+          </thead>
+          <tbody id="goals-body"></tbody>
+        </table>
+      </div>
+      <p><a class="btn" data-issue="update-data.yml" href="#goals">Correct a number</a></p>
+    </section>
+
+    <section id="chapters" class="block" aria-labelledby="chapters-title">
+      <h2 id="chapters-title">Local chapters</h2>
+      <p class="sub">A chapter is a group of neighbours working on the plan in one place. Join one, or list your own.</p>
+      <ul class="chapters" id="chapter-list"></ul>
+      <p class="empty" id="chapters-empty" hidden>No chapters are listed yet. Start one for your street, town or region.</p>
+      <p><a class="btn primary" data-issue="start-chapter.yml" href="#chapters">Start a local chapter</a></p>
+    </section>
+
+    <section id="how" class="block" aria-labelledby="how-title">
+      <h2 id="how-title">How it works</h2>
+      <ol class="steps">
+        <li><strong>Pick a task.</strong> Choose one at your scale from the list above, or propose a new one.</li>
+        <li><strong>Claim it.</strong> Comment <code>/claim</code> on the issue so others know. Comment <code>/release</code> if you need to step back.</li>
+        <li><strong>Do it, and take others with you.</strong> Ask a neighbour, a school or a council to join in. Share what you learn in the issue.</li>
+        <li><strong>Report it.</strong> File a report with the numbers. A maintainer checks it and adds the verified label.</li>
+      </ol>
+
+      <h3>Ground rules</h3>
+      <ul class="rules">
+        <li>Peaceful methods only: voluntary, democratic, commercial, diplomatic or civic.</li>
+        <li>Public by default, private where it counts. Share a city or region, never a home address or anyone's personal details.</li>
+        <li>Honest numbers. Every figure needs a source or a note on how it was worked out.</li>
+        <li>Disagree openly and kindly. Many choices in the plan, such as how to fund a basic floor or what role nuclear power should play, are contested.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>
+      <a data-repo-link="" href="#top">Repository</a> ·
+      <a data-repo-link="/discussions" href="#top">Discussions</a> ·
+      <a data-repo-link="/blob/main/CODE_OF_CONDUCT.md" href="#top">Code of conduct</a> ·
+      <a data-repo-link="/blob/main/GOVERNANCE.md" href="#top">Governance</a>
+    </p>
+    <p class="small" id="updated"></p>
+    <p class="small">
+      Inspired by the Federation in Star Trek, which imagines a society where nobody goes without. This is an independent community project and is not affiliated with or endorsed by the owners of Star Trek.
+    </p>
+  </footer>
+</body>
+</html>

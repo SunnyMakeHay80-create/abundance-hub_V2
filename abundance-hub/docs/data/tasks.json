@@ -1,0 +1,331 @@
+[
+  {
+    "id": "person-01",
+    "title": "Find out your own energy numbers",
+    "scale": "person",
+    "phase": "0",
+    "needs": ["energy"],
+    "body": "Find your household's annual electricity and heating use, what it costs, and where your electricity comes from. Your bills or your utility's online account have the figures.",
+    "measure": "You know your kWh per year within the first month. Post it in a report if you like."
+  },
+  {
+    "id": "person-02",
+    "title": "Cut your own energy waste by 10 to 20%",
+    "scale": "person",
+    "phase": "0",
+    "needs": ["energy"],
+    "body": "Switch to LEDs, fix drafts and leaks, switch off standby loads, and use appliances efficiently. Start with whatever is cheapest.",
+    "measure": "Your annual energy use falls by 10 to 20% within two years where practical."
+  },
+  {
+    "id": "person-03",
+    "title": "Get to know five neighbours",
+    "scale": "person",
+    "phase": "0",
+    "needs": ["connection", "safety"],
+    "body": "Knock, say hello, and ask what would make the street easier to live on. Pay particular attention to older, disabled or isolated neighbours. Strong ties are one of the best protections in storms and heatwaves.",
+    "measure": "Five neighbours you could ask for help, and who could ask you."
+  },
+  {
+    "id": "person-04",
+    "title": "Share a skill for two hours a month",
+    "scale": "person",
+    "phase": "0",
+    "needs": ["education", "connection"],
+    "body": "Teach a repair, tutor a student, run a language table, or help someone with paperwork. Offer it through a chapter, a library or a school.",
+    "measure": "Hours given per month, reported through a report issue."
+  },
+  {
+    "id": "person-05",
+    "title": "Attend a local planning or council meeting",
+    "scale": "person",
+    "phase": "0",
+    "needs": ["shelter", "energy"],
+    "body": "Find out when your local council or planning committee meets and go to one meeting. Speak in support of housing, clean energy or transit projects if they are on the agenda.",
+    "measure": "One meeting attended; one public comment or letter sent."
+  },
+  {
+    "id": "person-06",
+    "title": "Back a group that brings power, water or schooling to people who lack them",
+    "scale": "person",
+    "phase": "1",
+    "needs": ["energy", "water", "education"],
+    "body": "Give time or money to an organisation working on electricity access, clean cooking, safe water or education. Check how it reports its results before you give.",
+    "measure": "A regular contribution of time or money, and one organisation whose results you have read."
+  },
+
+  {
+    "id": "hh-01",
+    "title": "Book a home energy audit",
+    "scale": "household",
+    "phase": "0",
+    "needs": ["energy"],
+    "body": "Many utilities and local programmes offer free or subsidised audits. If none does, a do-it-yourself walkthrough with a checklist still finds most of the big wins.",
+    "measure": "Audit done in year one, with a list of fixes ranked by cost."
+  },
+  {
+    "id": "hh-02",
+    "title": "Insulate and air-seal your home",
+    "scale": "household",
+    "phase": "1",
+    "needs": ["energy", "shelter"],
+    "body": "Insulation and draught-proofing are the most cost-effective upgrade in most climates. Renters can ask landlords, use temporary measures, or organise with other tenants. Households that cannot afford the upfront cost should be first in line for public programmes.",
+    "measure": "Heating and cooling energy per square metre, before and after."
+  },
+  {
+    "id": "hh-03",
+    "title": "Choose a heat pump and efficient appliances when replacements come due",
+    "scale": "household",
+    "phase": "1",
+    "needs": ["energy"],
+    "body": "When a boiler, water heater, cooker or fridge reaches the end of its life, replace it with an efficient electric version where practical. Plan ahead so you are not forced into a rushed choice.",
+    "measure": "Number of fossil-fuel appliances replaced and the resulting change in energy use."
+  },
+  {
+    "id": "hh-04",
+    "title": "Join community solar or install rooftop solar",
+    "scale": "household",
+    "phase": "1",
+    "needs": ["energy"],
+    "body": "Rooftop solar and a battery make sense for many homes. Renters and people with shaded roofs can use community solar or a clean-electricity plan instead.",
+    "measure": "kWh generated or purchased from clean sources per year."
+  },
+  {
+    "id": "hh-05",
+    "title": "Halve your household food waste",
+    "scale": "household",
+    "phase": "0",
+    "needs": ["food"],
+    "body": "Plan meals, store food well, freeze leftovers and compost what is left. Weigh your waste for a week to get a baseline.",
+    "measure": "Food waste in kilograms per week, before and after."
+  },
+  {
+    "id": "hh-06",
+    "title": "Make a household emergency plan",
+    "scale": "household",
+    "phase": "0",
+    "needs": ["safety", "health"],
+    "body": "Keep a basic kit with water, food and medicines. Have a backup power plan for essentials such as phones and medical devices. Agree a check-in plan with at least one neighbour.",
+    "measure": "Kit and plan complete; neighbour check-in agreed."
+  },
+
+  {
+    "id": "nb-01",
+    "title": "Start a neighbourhood group and publish a local needs dashboard",
+    "scale": "neighbourhood",
+    "phase": "0",
+    "needs": ["connection"],
+    "body": "Meet regularly, pick a small area, and publish a one-page version of the Needs Floor with local baselines for energy, housing, food, water, health and education. Open a chapter issue so others can find you.",
+    "measure": "A published dashboard and a regular meeting. Number of households involved."
+  },
+  {
+    "id": "nb-02",
+    "title": "Organise a bulk buy of insulation, heat pumps or solar",
+    "scale": "neighbourhood",
+    "phase": "0",
+    "needs": ["energy"],
+    "body": "Group purchases cut prices and make installers' work more efficient. Choose one product, get several quotes, and give low-income households first call on any subsidies.",
+    "measure": "Households that bought, price versus single quotes, and energy saved."
+  },
+  {
+    "id": "nb-03",
+    "title": "Open a repair cafe or tool library",
+    "scale": "neighbourhood",
+    "phase": "0",
+    "needs": ["education", "connection"],
+    "body": "Lend tools and teach repair so fewer things get thrown away and more people can fix things themselves. A library, school hall or community centre is a good host.",
+    "measure": "Items repaired or borrowed per month and volunteers involved."
+  },
+  {
+    "id": "nb-04",
+    "title": "Equip a resilience hub with power, heat and phone charging",
+    "scale": "neighbourhood",
+    "phase": "1",
+    "needs": ["energy", "safety", "health"],
+    "body": "Fit a school, library or community centre with solar and a battery so there is a safe place for warmth, cooling, phone charging and information during emergencies. Check the building with its owner and your local emergency planners.",
+    "measure": "Hours of backup power available and people able to be served."
+  },
+  {
+    "id": "nb-05",
+    "title": "Start a community garden or food-sharing table",
+    "scale": "neighbourhood",
+    "phase": "0",
+    "needs": ["food"],
+    "body": "Grow, preserve and share food. Link up with local farms and food banks. Make sure the offer reaches people who are shy about asking.",
+    "measure": "Kilograms of food grown or shared and households reached."
+  },
+  {
+    "id": "nb-06",
+    "title": "Set up a mutual aid fund and a neighbour check-in system",
+    "scale": "neighbourhood",
+    "phase": "0",
+    "needs": ["income", "safety"],
+    "body": "A small pooled fund for emergencies such as a broken boiler, a medical bill or a missed rent payment, plus a simple way to check on older, disabled or isolated neighbours during storms and heatwaves. Agree clear rules and keep the accounts open.",
+    "measure": "Grants made, check-ins completed, and people who said it helped."
+  },
+
+  {
+    "id": "cr-01",
+    "title": "Adopt efficient, electric-ready, solar-ready building codes",
+    "scale": "city-region",
+    "phase": "1",
+    "needs": ["shelter", "energy"],
+    "body": "Update local building codes so that new homes are efficient, ready for heat pumps and chargers, and ready for solar. Make permitting quick and predictable.",
+    "measure": "Code adopted, with a date; permit times before and after."
+  },
+  {
+    "id": "cr-02",
+    "title": "Launch a low-income retrofit programme with on-bill or low-interest financing",
+    "scale": "city-region",
+    "phase": "1",
+    "needs": ["energy", "shelter", "income"],
+    "body": "Prioritise the homes with the highest energy bills and the least ability to pay. Let households repay from their savings through the bill, or use grants and low-interest loans.",
+    "measure": "Homes retrofitted and average bill savings, tracked yearly."
+  },
+  {
+    "id": "cr-03",
+    "title": "Plan the local grid for solar, storage, chargers and heat pumps",
+    "scale": "city-region",
+    "phase": "1",
+    "needs": ["energy"],
+    "body": "Work with the utility on a grid plan that can carry rooftop solar, batteries, vehicle charging and electric heating, and fund microgrids for critical services such as clinics and shelters.",
+    "measure": "Published grid plan; critical facilities with backup power."
+  },
+  {
+    "id": "cr-04",
+    "title": "Expand transit, cycling and walking, and electrify buses",
+    "scale": "city-region",
+    "phase": "1",
+    "needs": ["mobility"],
+    "body": "Make it quick, safe and cheap to reach work, school and services without a car. Replace diesel buses and municipal vehicles with electric ones.",
+    "measure": "Share of trips by transit, bike or foot; electric share of the bus fleet."
+  },
+  {
+    "id": "cr-05",
+    "title": "Reform zoning so more homes can be built near jobs and transit",
+    "scale": "city-region",
+    "phase": "1",
+    "needs": ["shelter"],
+    "body": "Allow more homes where people want to live, and support social and cooperative housing. Combine it with protections for existing residents.",
+    "measure": "Homes permitted per year and the share that are affordable."
+  },
+  {
+    "id": "cr-06",
+    "title": "Train a local clean-energy workforce with transition support",
+    "scale": "city-region",
+    "phase": "1",
+    "needs": ["income", "education"],
+    "body": "Partner with colleges and unions to train installers, electricians, retrofitters and grid technicians, with priority access for workers leaving declining industries and wage support while they train.",
+    "measure": "People trained and the share who are working in the field six months later."
+  },
+
+  {
+    "id": "nat-01",
+    "title": "Publish a national energy plan with a clear schedule",
+    "scale": "national",
+    "phase": "0",
+    "needs": ["energy"],
+    "body": "Set targets for renewables, storage, grids and firm clean power, with dates, budgets and a named body responsible for reporting progress each year.",
+    "measure": "Plan published; yearly progress report."
+  },
+  {
+    "id": "nat-02",
+    "title": "Reform permitting for transmission lines and clean energy",
+    "scale": "national",
+    "phase": "1",
+    "needs": ["energy"],
+    "body": "Decide projects in years instead of decades, while protecting communities and ecosystems through clear rules and real consultation.",
+    "measure": "Median permitting time for transmission, solar, wind, geothermal and nuclear projects."
+  },
+  {
+    "id": "nat-03",
+    "title": "Pilot and evaluate an income or services floor",
+    "scale": "national",
+    "phase": "1",
+    "needs": ["income"],
+    "body": "Options include cash transfers, a basic income, expanded social insurance, or universal basic services such as health, education, transit and broadband. Costs, work incentives and politics differ, so pilot, publish results and adjust.",
+    "measure": "Pilot launched; independent evaluation published."
+  },
+  {
+    "id": "nat-04",
+    "title": "Fund open research into storage, geothermal, advanced fission and fusion",
+    "scale": "national",
+    "phase": "1",
+    "needs": ["energy"],
+    "body": "Fund research on long-duration storage, next-generation geothermal, advanced nuclear and fusion, with results shared openly. Treat fusion as upside, not a foundation.",
+    "measure": "Public research funding per year and open publications or data released."
+  },
+  {
+    "id": "nat-05",
+    "title": "Create just-transition programmes for workers in declining industries",
+    "scale": "national",
+    "phase": "1",
+    "needs": ["income"],
+    "body": "Retraining, wage support, pension protection and regional investment so that the people and places that lose from change are not left behind.",
+    "measure": "Workers supported and the share who are in new work after one year."
+  },
+
+  {
+    "id": "gl-01",
+    "title": "Negotiate cross-border grid links and energy trade agreements",
+    "scale": "global",
+    "phase": "2",
+    "needs": ["energy", "safety"],
+    "body": "Link neighbours so surplus solar, wind or hydro in one place supplies another at a different time of day. Mutual dependence raises the cost of conflict.",
+    "measure": "Agreements signed and interconnection capacity built."
+  },
+  {
+    "id": "gl-02",
+    "title": "Draft a critical-minerals compact",
+    "scale": "global",
+    "phase": "1",
+    "needs": ["energy", "safety"],
+    "body": "Transparent trade, environmental and labour standards, recycling targets, joint stockpiles and fair prices. Diversify mining, processing and manufacturing across many countries so that no single point of failure exists.",
+    "measure": "Compact signed; share of battery and panel supply from outside the top producer."
+  },
+  {
+    "id": "gl-03",
+    "title": "Fund clean energy access in low-income countries",
+    "scale": "global",
+    "phase": "1",
+    "needs": ["energy", "education", "health"],
+    "body": "Low-interest loans, guarantees, grants and debt relief so poorer countries can build clean energy without paying a premium for capital. Link it to clinics, schools and water systems.",
+    "measure": "People newly connected and money committed against need."
+  },
+  {
+    "id": "gl-04",
+    "title": "Strengthen nuclear safeguards and verification",
+    "scale": "global",
+    "phase": "1",
+    "needs": ["safety"],
+    "body": "Strengthen international inspections, safeguards and fuel-supply arrangements so that civilian nuclear power does not spread weapons capability. Pursue verifiable arms reductions and crisis hotlines alongside.",
+    "measure": "Inspection coverage, agreements renewed or extended, and confidence-building measures adopted."
+  },
+  {
+    "id": "gl-05",
+    "title": "Agree norms that protect civilian energy, water and health infrastructure",
+    "scale": "global",
+    "phase": "2",
+    "needs": ["safety"],
+    "body": "Agree norms against attacking civilian grids, water systems and hospitals, including in cyberspace, and set up ways to investigate breaches.",
+    "measure": "Norms or treaty text adopted and the number of countries signed up."
+  },
+  {
+    "id": "gl-06",
+    "title": "Set up open-technology and joint research institutions",
+    "scale": "global",
+    "phase": "1",
+    "needs": ["education", "energy"],
+    "body": "Open standards, patent-licensing pools, shared research institutes in the style of CERN or ITER, and training for engineers worldwide.",
+    "measure": "Institutions founded, designs released openly, and engineers trained."
+  },
+  {
+    "id": "gl-07",
+    "title": "Build people-to-people exchange between cities, schools and scientists",
+    "scale": "global",
+    "phase": "0",
+    "needs": ["connection", "education"],
+    "body": "Sister-city links, student and teacher exchanges, joint science projects and shared cultural events. Trust is built through contact.",
+    "measure": "Exchanges run per year and participants."
+  }
+]
