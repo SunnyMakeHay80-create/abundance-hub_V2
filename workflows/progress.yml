@@ -1,0 +1,41 @@
+name: Update progress data
+
+# Rebuilds docs/data/progress.json from issues and milestones so the site always shows current numbers.
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  issues:
+    types: [opened, closed, reopened, labeled, unlabeled, edited]
+
+concurrency:
+  group: progress-data
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  issues: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build progress data
+        run: node scripts/build-progress.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/progress.json
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Update progress data"
+            git push
+          fi

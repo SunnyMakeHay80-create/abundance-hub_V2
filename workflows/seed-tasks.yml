@@ -1,0 +1,40 @@
+name: Seed starter tasks
+
+# Run this once from the Actions tab. It creates the labels, the four phase milestones
+# and one issue for each starter task in plan/tasks.json. Running it again is safe:
+# tasks that already exist are skipped.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only report what would be created"
+        type: boolean
+        default: false
+
+permissions:
+  issues: write
+  contents: read
+  actions: write
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Seed labels, milestones and issues
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            node scripts/seed-issues.mjs --dry-run
+          else
+            node scripts/seed-issues.mjs
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Refresh the site data
+        if: ${{ !inputs.dry_run }}
+        run: gh workflow run progress.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

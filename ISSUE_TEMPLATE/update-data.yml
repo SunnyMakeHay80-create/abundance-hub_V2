@@ -1,0 +1,31 @@
+name: Correct a number or add a source
+description: Fix a baseline or target in the goals dashboard.
+title: "Data: "
+labels: ["type:data"]
+body:
+  - type: input
+    id: goal
+    attributes:
+      label: Which goal
+      description: For example "People with electricity access".
+    validations:
+      required: true
+  - type: input
+    id: figure
+    attributes:
+      label: The figure you think is right
+      description: Include the unit and the year.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+      description: Link to an official or peer-reviewed source, such as the IEA, IRENA, World Bank, WHO, FAO or a national statistics office.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything that helps a maintainer check it, such as which table or page.

@@ -1,0 +1,56 @@
+name: Propose a task or project
+description: Suggest work that is missing from the plan.
+title: "Proposal: "
+labels: ["type:proposal"]
+body:
+  - type: dropdown
+    id: scale
+    attributes:
+      label: Scale
+      options:
+        - Person
+        - Household
+        - Neighbourhood
+        - City or region
+        - Nation
+        - Global
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      description: When should this happen?
+      options:
+        - "0: Foundations (late 2026 to 2027)"
+        - "1: Deploy what works (2027 to 2030)"
+        - "2: Add firm power and deepen cooperation (2030 to 2040)"
+        - "3: Abundance and sharing (2040 to 2055)"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing
+      description: Describe the task in plain terms.
+    validations:
+      required: true
+  - type: textarea
+    id: measure
+    attributes:
+      label: How we will know it worked
+      description: One or two numbers or checks. Say how they would be measured.
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How to start
+      description: First steps, who could help, and any costs or risks you can see.
+  - type: checkboxes
+    id: peaceful
+    attributes:
+      label: Peaceful methods
+      options:
+        - label: This proposal uses only voluntary, democratic, commercial, diplomatic or civic methods.
+          required: true
