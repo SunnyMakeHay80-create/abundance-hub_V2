@@ -1,0 +1,96 @@
+{
+  "updated": "2026-10-10",
+  "note": "Baselines are approximate and taken from the plan draft. Check each against the latest IEA, IRENA, World Bank, WHO, FAO and UN figures, then correct it with a data issue. Targets are proposals for communities to debate and adjust.",
+  "goals": [
+    {
+      "id": "electricity-access",
+      "label": "People with electricity access",
+      "need": "energy",
+      "baseline": "Roughly 700 million people lack it",
+      "targets": { "2030": "Cut the gap by at least half", "2040": "100% access", "2050": "100% reliable access" }
+    },
+    {
+      "id": "clean-cooking",
+      "label": "People with clean cooking",
+      "need": "energy",
+      "baseline": "Roughly 2 billion people lack it",
+      "targets": { "2030": "Halve the gap", "2040": "100%", "2050": "100%" }
+    },
+    {
+      "id": "renewable-capacity",
+      "label": "Renewable capacity",
+      "need": "energy",
+      "baseline": "Measured against 2022",
+      "targets": { "2030": "Triple it (existing global goal)", "2040": "Keep growing", "2050": "Dominant source" }
+    },
+    {
+      "id": "grid-storage",
+      "label": "Grid-scale storage",
+      "need": "energy",
+      "baseline": "Around 124 GW in 2024 (IEA)",
+      "targets": { "2030": "About 1,500 GW (IEA)", "2040": "Multiples of that", "2050": "Covers multi-day needs" }
+    },
+    {
+      "id": "low-carbon-electricity",
+      "label": "Electricity from low-carbon sources",
+      "need": "energy",
+      "baseline": "Roughly 40%",
+      "targets": { "2030": "60%", "2040": "85%", "2050": "Near 100%" }
+    },
+    {
+      "id": "energy-cost-burden",
+      "label": "Households spending over 6% of income on energy",
+      "need": "energy",
+      "baseline": "Measure locally",
+      "targets": { "2030": "Cut by a third", "2040": "Cut by two thirds", "2050": "Near zero" }
+    },
+    {
+      "id": "safe-water",
+      "label": "People without safely managed drinking water",
+      "need": "water",
+      "baseline": "Roughly 2 billion people",
+      "targets": { "2030": "Halve the gap", "2040": "Near zero", "2050": "Zero" }
+    },
+    {
+      "id": "hunger",
+      "label": "People facing hunger",
+      "need": "food",
+      "baseline": "Roughly 700 to 800 million people",
+      "targets": { "2030": "Cut by a third", "2040": "Near zero", "2050": "Zero" }
+    },
+    {
+      "id": "secure-housing",
+      "label": "People lacking secure housing",
+      "need": "shelter",
+      "baseline": "Measure locally",
+      "targets": { "2030": "Cut by a third", "2040": "Near zero", "2050": "Zero" }
+    },
+    {
+      "id": "secondary-education",
+      "label": "Completion of secondary education",
+      "need": "education",
+      "baseline": "Varies widely",
+      "targets": { "2030": "80% globally", "2040": "95%", "2050": "Universal" }
+    },
+    {
+      "id": "health-coverage",
+      "label": "Essential health coverage",
+      "need": "health",
+      "baseline": "Varies widely",
+      "targets": { "2030": "75% of the population", "2040": "90%", "2050": "Universal" }
+    },
+    {
+      "id": "cooperation-links",
+      "label": "Cross-border grid links and shared research agreements",
+      "need": "safety",
+      "baseline": "Few today",
+      "targets": { "2030": "Several regional agreements signed", "2040": "Most regions linked", "2050": "A global network" }
+    }
+  ],
+  "phases": [
+    { "id": "0", "title": "Foundations", "years": "Late 2026 to 2027", "summary": "Form local groups, publish baselines, launch easy wins, start talking across borders." },
+    { "id": "1", "title": "Deploy what works", "years": "2027 to 2030", "summary": "Build solar, wind, storage and grids. Reach the people without power. Retrofit homes. Fund transition support." },
+    { "id": "2", "title": "Add firm power, deepen cooperation", "years": "2030 to 2040", "summary": "Add geothermal, long-duration storage and nuclear where they fit. Electrify transport, heating and industry. Link grids across borders." },
+    { "id": "3", "title": "Abundance and sharing", "years": "2040 to 2055", "summary": "Reach very high clean electricity. Move the savings into housing, health, education and science. Keep institutions fair." }
+  ]
+}
